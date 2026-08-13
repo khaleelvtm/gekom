@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+.next/
+out/
+public/build/
+storybook-static/
+
+# Caches / temp / logs
+.cache/
+coverage/
+tmp/
+logs/
+*.log
+
+# Lockfiles (large, low-signal for review/context)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Binary / media assets
+*.zip
+*.png
+*.jpg
+*.jpeg
+*.mp4
+
+.claude/
+.vscode/

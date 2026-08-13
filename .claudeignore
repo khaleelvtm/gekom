@@ -1,0 +1,35 @@
+# NOTE: Claude Code has no officially documented ".claudeignore" mechanism.
+# The patterns below are kept here for tools/extensions that look for this
+# filename, but the ones that actually govern Claude Code's file access are
+# .gitignore (respected by default) and the permissions.deny rules in
+# .claude/settings.json. Keep this file's patterns in sync with .gitignore.
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+.next/
+out/
+public/build/
+storybook-static/
+
+# Caches / temp / logs
+.cache/
+coverage/
+tmp/
+logs/
+*.log
+
+# Lockfiles (large, low-signal for review/context)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Binary / media assets
+*.zip
+*.png
+*.jpg
+*.jpeg
+*.mp4
