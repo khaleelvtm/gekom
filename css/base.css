@@ -217,9 +217,14 @@ body {
 .about-section__image,
 .about-section__secondary-image {
     display: block;
-    width: 100%;
+    width: auto;
+    max-width: none;
     height: auto;
     border-radius: var(--radius-4xl);
+}
+
+.about-section__secondary-image {
+    float: right;
 }
 
 .about-section__action {
