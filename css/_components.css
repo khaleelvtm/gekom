@@ -417,7 +417,7 @@
 }
 
 .clients-track {
-    gap: var(--space-56);
+    gap: 90px;
     align-items: center;
 }
 
@@ -426,14 +426,14 @@
     flex: 0 0 auto;
     align-items: center;
     justify-content: center;
-    min-width: 90px;
+    min-width: 120px;
     scroll-snap-align: start;
 }
 
 .client-logo img {
     display: block;
     width: auto;
-    height: 40px;
+    height: 52px;
 }
 
 .value-panel {
