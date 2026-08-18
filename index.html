@@ -9,7 +9,16 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/_responsive.css">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="js/scroll-reveal.js" defer></script>
     <script src="js/main.js" defer></script>
+    <noscript>
+        <style>
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        </style>
+    </noscript>
 </head>
 
 <body>
@@ -43,16 +52,16 @@
 
     <main>
         <section class="hero" aria-labelledby="hero-title">
-            <div class="hero__container container">
-                <h1 class="hero__title" id="hero-title">
+            <div class="hero__container container" data-reveal-group>
+                <h1 class="hero__title reveal" id="hero-title">
                     India's <span>trusted force</span> in enterprise logistics
                 </h1>
-                <p class="hero__text">
+                <p class="hero__text reveal">
                     From warehouse automation to last-mile delivery. GEKOM powers the
                     supply chains of India's most ambitious enterprises with precision,
                     technology, and trust.
                 </p>
-                <div class="hero__actions" aria-label="Hero actions">
+                <div class="hero__actions reveal" aria-label="Hero actions">
                     <a class="button button--primary" href="#">
                         Get Quote Now
                         <span class="iconify button__icon" data-icon="solar:arrow-right-linear"
@@ -69,16 +78,16 @@
 
         <section class="about-section" aria-labelledby="about-title">
             <div class="about-section__intro container">
-                <div class="about-section__content">
-                    <h2 class="about-section__title" id="about-title">
+                <div class="about-section__content" data-reveal-group>
+                    <h2 class="about-section__title reveal" id="about-title">
                         <span>Delivering</span> excellence across every mile
                     </h2>
-                    <p class="about-section__lead">
+                    <p class="about-section__lead reveal">
                         With over 15 years of industry experience, Gekom Logistic Pvt.
                         Ltd. is a trusted provider of warehousing, transportation, and
                         integrated logistics solutions.
                     </p>
-                    <p class="about-section__body">
+                    <p class="about-section__body reveal">
                         Headquartered in Mumbai, we handle several two digit leading
                         multinational corporations with reliable, efficient, and
                         customized logistics services. Our commitment to operational
@@ -87,22 +96,22 @@
                         industries.
                     </p>
 
-                    <div class="stats-card" aria-label="Company highlights">
-                        <div class="stats-card__item">
+                    <div class="stats-card" aria-label="Company highlights" data-reveal-group>
+                        <div class="stats-card__item reveal">
                             <strong class="stats-card__value">15+</strong>
                             <span class="stats-card__label">Years Experience</span>
                         </div>
-                        <div class="stats-card__item">
+                        <div class="stats-card__item reveal">
                             <strong class="stats-card__value">500K+</strong>
                             <span class="stats-card__label">Sq Ft Warehousing</span>
                         </div>
-                        <div class="stats-card__item">
+                        <div class="stats-card__item reveal">
                             <strong class="stats-card__value">100%</strong>
                             <span class="stats-card__label">Proof of Delivery</span>
                         </div>
                     </div>
 
-                    <a class="button button--primary about-section__action" href="#">
+                    <a class="button button--primary about-section__action reveal" href="#">
                         Learn More About Us
                         <span class="iconify button__icon" data-icon="solar:arrow-right-linear"
                             aria-hidden="true"></span>
@@ -110,19 +119,19 @@
                 </div>
 
                 <div class="about-section__media">
-                    <img class="about-section__image" src="assets/images/gekom-home-about-section.png"
+                    <img class="about-section__image reveal" src="assets/images/gekom-home-about-section.png"
                         alt="Warehouse storage aisles with organized pallet racks." width="811" height="459">
                 </div>
             </div>
 
             <div class="about-section__details container">
                 <div class="about-section__secondary-media">
-                    <img class="about-section__secondary-image" src="assets/images/gekom-home-vision-and-mission.png"
+                    <img class="about-section__secondary-image reveal" src="assets/images/gekom-home-vision-and-mission.png"
                         alt="Warehouse floor with forklifts and carton handling operations." width="697" height="511">
                 </div>
 
-                <div class="about-section__cards">
-                    <article class="info-card info-card--vision">
+                <div class="about-section__cards" data-reveal-group>
+                    <article class="info-card info-card--vision reveal">
                         <div class="info-card__icon" aria-hidden="true">
                             <span class="iconify" data-icon="solar:radar-2-linear"></span>
                         </div>
@@ -138,7 +147,7 @@
                         </div>
                     </article>
 
-                    <article class="info-card info-card--mission">
+                    <article class="info-card info-card--mission reveal">
                         <div class="info-card__icon" aria-hidden="true">
                             <span class="iconify" data-icon="solar:golf-linear"></span>
                         </div>
@@ -163,11 +172,11 @@
 
         <section class="services-section" aria-labelledby="services-title">
             <div class="services-section__container container">
-                <div class="services-section__header">
-                    <h2 class="services-section__title" id="services-title">
+                <div class="services-section__header" data-reveal-group>
+                    <h2 class="services-section__title reveal" id="services-title">
                         End-to-end logistics solutions designed for modern businesses
                     </h2>
-                    <p class="services-section__text">
+                    <p class="services-section__text reveal">
                         From intelligent warehousing and third-party logistics to
                         nationwide transportation and value-added supply chain services,
                         GEKOM delivers integrated logistics solutions that improve
@@ -176,8 +185,8 @@
                     </p>
                 </div>
 
-                <div class="services-grid">
-                    <article class="service-card">
+                <div class="services-grid" data-reveal-group>
+                    <article class="service-card reveal">
                         <h3 class="service-card__title">Third Party Logistics (3PL)</h3>
                         <img class="service-card__image" src="assets/images/gekom-solutions-01.png"
                             alt="Third party logistics truck service." width="305" height="208">
@@ -186,7 +195,7 @@
                         </a>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal">
                         <h3 class="service-card__title">Warehousing</h3>
                         <img class="service-card__image" src="assets/images/gekom-solutions-02.png"
                             alt="Warehousing solution with storage facility." width="305" height="208">
@@ -195,7 +204,7 @@
                         </a>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal">
                         <h3 class="service-card__title">Inventory Management</h3>
                         <img class="service-card__image" src="assets/images/gekom-solutions-03.png"
                             alt="Inventory management with storage racks and checklist." width="305" height="208">
@@ -204,7 +213,7 @@
                         </a>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal">
                         <h3 class="service-card__title">Transportation</h3>
                         <img class="service-card__image" src="assets/images/gekom-solutions-04.png"
                             alt="Transportation service truck on a logistics route." width="305" height="208">
@@ -213,7 +222,7 @@
                         </a>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal">
                         <h3 class="service-card__title">Distribution</h3>
                         <img class="service-card__image" src="assets/images/gekom-solutions-05.png"
                             alt="Distribution network with mapped delivery nodes." width="305" height="208">
@@ -222,7 +231,7 @@
                         </a>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal">
                         <h3 class="service-card__title">Manpower Supply</h3>
                         <img class="service-card__image" src="assets/images/gekom-solutions-06.png"
                             alt="Manpower supply staff members in GEKOM uniforms." width="305" height="208">
@@ -231,7 +240,7 @@
                         </a>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal">
                         <h3 class="service-card__title">Security &amp; Surveillance</h3>
                         <img class="service-card__image" src="assets/images/gekom-solutions-07.png"
                             alt="Security and surveillance with shield and monitoring camera." width="305" height="208">
@@ -241,7 +250,7 @@
                         </a>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal">
                         <h3 class="service-card__title">Value Added Services</h3>
                         <img class="service-card__image" src="assets/images/gekom-solutions-08.png"
                             alt="Value added services with packaging and logistics add-ons." width="305" height="208">
@@ -252,7 +261,7 @@
                 </div>
 
                 <div class="services-section__footer">
-                    <a class="button button--primary services-section__action" href="#">
+                    <a class="button button--primary services-section__action reveal" href="#">
                         Know More About Our Services
                         <span class="iconify button__icon" data-icon="solar:arrow-right-linear"
                             aria-hidden="true"></span>
@@ -263,18 +272,18 @@
 
         <section class="delivering-section" aria-labelledby="delivering-title">
             <div class="delivering-section__container container">
-                <div class="delivering-section__content">
-                    <h2 class="delivering-section__title" id="delivering-title">
+                <div class="delivering-section__content" data-reveal-group>
+                    <h2 class="delivering-section__title reveal" id="delivering-title">
                         Delivering excellence across every link in your supply chain
                     </h2>
-                    <p class="delivering-section__text">
+                    <p class="delivering-section__text reveal">
                         GEKOM combines operational expertise, advanced logistics
                         technology, and customer-focused solutions to deliver reliable
                         supply chain services.
                     </p>
 
-                    <div class="feature-grid" aria-label="Company capabilities">
-                        <div class="feature-card">
+                    <div class="feature-grid" aria-label="Company capabilities" data-reveal-group>
+                        <div class="feature-card reveal">
                             <div class="feature-card__icon" aria-hidden="true">
                                 <span class="iconify" data-icon="solar:garage-line-duotone"></span>
                             </div>
@@ -284,7 +293,7 @@
                             </div>
                         </div>
 
-                        <div class="feature-card">
+                        <div class="feature-card reveal">
                             <div class="feature-card__icon" aria-hidden="true">
                                 <span class="iconify" data-icon="solar:box-line-duotone"></span>
                             </div>
@@ -294,7 +303,7 @@
                             </div>
                         </div>
 
-                        <div class="feature-card">
+                        <div class="feature-card reveal">
                             <div class="feature-card__icon" aria-hidden="true">
                                 <span class="iconify" data-icon="solar:document-add-line-duotone"></span>
                             </div>
@@ -304,7 +313,7 @@
                             </div>
                         </div>
 
-                        <div class="feature-card">
+                        <div class="feature-card reveal">
                             <div class="feature-card__icon" aria-hidden="true">
                                 <span class="iconify" data-icon="solar:shield-check-line-duotone"></span>
                             </div>
@@ -314,7 +323,7 @@
                             </div>
                         </div>
 
-                        <div class="feature-card">
+                        <div class="feature-card reveal">
                             <div class="feature-card__icon" aria-hidden="true">
                                 <span class="iconify" data-icon="solar:users-group-two-rounded-line-duotone"></span>
                             </div>
@@ -324,7 +333,7 @@
                             </div>
                         </div>
 
-                        <div class="feature-card">
+                        <div class="feature-card reveal">
                             <div class="feature-card__icon" aria-hidden="true">
                                 <span class="iconify" data-icon="solar:forbidden-circle-line-duotone"></span>
                             </div>
@@ -334,7 +343,7 @@
                             </div>
                         </div>
 
-                        <div class="feature-card">
+                        <div class="feature-card reveal">
                             <div class="feature-card__icon" aria-hidden="true">
                                 <span class="iconify" data-icon="solar:settings-line-duotone"></span>
                             </div>
@@ -344,7 +353,7 @@
                             </div>
                         </div>
 
-                        <div class="feature-card">
+                        <div class="feature-card reveal">
                             <div class="feature-card__icon" aria-hidden="true">
                                 <span class="iconify" data-icon="solar:chart-line-duotone"></span>
                             </div>
@@ -359,36 +368,36 @@
         </section>
 
         <section class="milestone-section" aria-labelledby="milestone-title">
-            <div class="milestone-section__container container">
-                <h2 class="milestone-section__title" id="milestone-title">Our Corporate Milestone</h2>
-                <p class="milestone-section__text">
+            <div class="milestone-section__container container" data-reveal-group>
+                <h2 class="milestone-section__title reveal" id="milestone-title">Our Corporate Milestone</h2>
+                <p class="milestone-section__text reveal">
                     From a single warehouse to a nationwide enterprise supply chain leader.
                 </p>
 
                 <div class="slider milestone-slider" data-slider aria-label="Corporate milestones">
-                    <div class="slider__track milestone-track" data-slider-track>
-                        <article class="milestone-card">
+                    <div class="slider__track milestone-track" data-slider-track data-reveal-group>
+                        <article class="milestone-card reveal">
                             <span class="milestone-card__year">2008</span>
                             <p class="milestone-card__text">Started 3PL logistics for LG</p>
                             <img class="milestone-card__logo" src="assets/images/gekom-client-lg.png" alt="LG"
                                 width="113" height="52">
                         </article>
 
-                        <article class="milestone-card">
+                        <article class="milestone-card reveal">
                             <span class="milestone-card__year">2011</span>
                             <p class="milestone-card__text">Started 3PL logistics for ITC</p>
                             <img class="milestone-card__logo" src="assets/images/gekom-client-itc.png" alt="ITC Limited"
                                 width="50" height="52">
                         </article>
 
-                        <article class="milestone-card">
+                        <article class="milestone-card reveal">
                             <span class="milestone-card__year">2013</span>
                             <p class="milestone-card__text">Started 3PL logistics for Bajaj</p>
                             <img class="milestone-card__logo" src="assets/images/gekom-client-bajaj.png" alt="Bajaj"
                                 width="188" height="40">
                         </article>
 
-                        <article class="milestone-card">
+                        <article class="milestone-card reveal">
                             <span class="milestone-card__year">2015</span>
                             <p class="milestone-card__text">
                                 Started 3PL logistics for Reliance MW at Thrissure
@@ -397,7 +406,7 @@
                                 alt="Reliance Retail" width="105" height="52">
                         </article>
 
-                        <article class="milestone-card">
+                        <article class="milestone-card reveal">
                             <span class="milestone-card__year">2015</span>
                             <p class="milestone-card__text">
                                 Started 3PL logistics for Reliance MW at Thrissure
@@ -416,9 +425,9 @@
         </section>
 
         <section class="clients-section" aria-labelledby="clients-title">
-            <div class="clients-section__container container">
-                <h2 class="clients-section__title" id="clients-title">Our Major Clients</h2>
-                <p class="clients-section__text">
+            <div class="clients-section__container container" data-reveal-group>
+                <h2 class="clients-section__title reveal" id="clients-title">Our Major Clients</h2>
+                <p class="clients-section__text reveal">
                     Building lasting partnerships with industry-leading brands through
                     reliable logistics and exceptional service.
                 </p>
@@ -429,34 +438,34 @@
                         <span class="iconify" data-icon="solar:alt-arrow-left-line-duotone" aria-hidden="true"></span>
                     </button>
 
-                    <ul class="slider__track clients-track" data-slider-track>
-                        <li class="client-logo">
+                    <ul class="slider__track clients-track" data-slider-track data-reveal-group>
+                        <li class="client-logo reveal">
                             <img src="assets/images/gekom-client-itc.png" alt="ITC Limited" width="50" height="52">
                         </li>
-                        <li class="client-logo">
+                        <li class="client-logo reveal">
                             <img src="assets/images/gekom-client-lg.png" alt="LG" width="113" height="52">
                         </li>
-                        <li class="client-logo">
+                        <li class="client-logo reveal">
                             <img src="assets/images/gekom-client-tata.png" alt="Tata Teleservices" width="51"
                                 height="52">
                         </li>
-                        <li class="client-logo">
+                        <li class="client-logo reveal">
                             <img src="assets/images/gekom-client-reliance.png" alt="Reliance Retail" width="105"
                                 height="52">
                         </li>
-                        <li class="client-logo">
+                        <li class="client-logo reveal">
                             <img src="assets/images/gekom-client-haier.png" alt="Haier" width="98" height="52">
                         </li>
-                        <li class="client-logo">
+                        <li class="client-logo reveal">
                             <img src="assets/images/gekom-client-philips.png" alt="Philips" width="41" height="52">
                         </li>
-                        <li class="client-logo">
+                        <li class="client-logo reveal">
                             <img src="assets/images/gekom-client-bajaj.png" alt="Bajaj" width="41" height="52">
                         </li>
-                        <li class="client-logo">
+                        <li class="client-logo reveal">
                             <img src="assets/images/gekom-client-philips.png" alt="Philips" width="41" height="52">
                         </li>
-                        <li class="client-logo">
+                        <li class="client-logo reveal">
                             <img src="assets/images/gekom-client-bajaj.png" alt="Bajaj" width="41" height="52">
                         </li>
                     </ul>
@@ -472,65 +481,65 @@
         <section class="value-section" aria-labelledby="value-title">
             <div class="value-section__container container">
                 <div class="value-panel">
-                    <div class="value-panel__header">
-                        <h2 class="value-panel__title" id="value-title">Beyond Standard Logistics</h2>
-                        <p class="value-panel__text">
+                    <div class="value-panel__header" data-reveal-group>
+                        <h2 class="value-panel__title reveal" id="value-title">Beyond Standard Logistics</h2>
+                        <p class="value-panel__text reveal">
                             A complete portfolio of value-added services that turn your
                             supply chain into a competitive advantage.
                         </p>
                     </div>
 
-                    <div class="value-grid">
-                        <div class="value-card">
+                    <div class="value-grid" data-reveal-group>
+                        <div class="value-card reveal">
                             <div class="value-card__icon" aria-hidden="true">
                                 <img src="assets/images/gekom-logistics-icon-1.png" alt="" width="24" height="24">
                             </div>
                             <span class="value-card__title">Order Management</span>
                         </div>
 
-                        <div class="value-card">
+                        <div class="value-card reveal">
                             <div class="value-card__icon" aria-hidden="true">
                                 <img src="assets/images/gekom-logistics-icon-2.png" alt="" width="24" height="24">
                             </div>
                             <span class="value-card__title">Palletisation &amp; Racking</span>
                         </div>
 
-                        <div class="value-card">
+                        <div class="value-card reveal">
                             <div class="value-card__icon" aria-hidden="true">
                                 <img src="assets/images/gekom-logistics-icon-3.png" alt="" width="24" height="24">
                             </div>
                             <span class="value-card__title">Material Handling Automation</span>
                         </div>
 
-                        <div class="value-card">
+                        <div class="value-card reveal">
                             <div class="value-card__icon" aria-hidden="true">
                                 <img src="assets/images/gekom-logistics-icon-4.png" alt="" width="24" height="24">
                             </div>
                             <span class="value-card__title">Warehouse Management System</span>
                         </div>
 
-                        <div class="value-card">
+                        <div class="value-card reveal">
                             <div class="value-card__icon" aria-hidden="true">
                                 <img src="assets/images/gekom-logistics-icon-5.png" alt="" width="24" height="24">
                             </div>
                             <span class="value-card__title">ERP implementation</span>
                         </div>
 
-                        <div class="value-card">
+                        <div class="value-card reveal">
                             <div class="value-card__icon" aria-hidden="true">
                                 <img src="assets/images/gekom-logistics-icon-6.png" alt="" width="24" height="24">
                             </div>
                             <span class="value-card__title">Other IT &amp; Networking Support</span>
                         </div>
 
-                        <div class="value-card">
+                        <div class="value-card reveal">
                             <div class="value-card__icon" aria-hidden="true">
                                 <img src="assets/images/gekom-logistics-icon-7.png" alt="" width="24" height="24">
                             </div>
                             <span class="value-card__title">GST, E-way Bill Management</span>
                         </div>
 
-                        <div class="value-card">
+                        <div class="value-card reveal">
                             <div class="value-card__icon" aria-hidden="true">
                                 <img src="assets/images/gekom-logistics-icon-8.png" alt="" width="24" height="24">
                             </div>
@@ -539,7 +548,7 @@
                     </div>
 
                     <div class="value-panel__footer">
-                        <a class="button button--primary value-panel__action" href="#">
+                        <a class="button button--primary value-panel__action reveal" href="#">
                             Know More
                             <span class="iconify button__icon" data-icon="solar:arrow-right-linear"
                                 aria-hidden="true"></span>
@@ -553,18 +562,18 @@
     <footer class="site-footer">
         <span class="site-footer__watermark" aria-hidden="true">GEKOM</span>
 
-        <div class="site-footer__container container">
-            <a class="brand site-footer__brand" href="#" aria-label="GEKOM Logistics Pvt. Ltd. home">
+        <div class="site-footer__container container" data-reveal-group>
+            <a class="brand site-footer__brand reveal" href="#" aria-label="GEKOM Logistics Pvt. Ltd. home">
                 <img class="brand__image" src="assets/images/gekom-logo.png" alt="GEKOM Logistics Pvt. Ltd." width="167"
                     height="70">
             </a>
 
-            <p class="site-footer__text">
+            <p class="site-footer__text reveal">
                 India's trusted enterprise logistics partner, delivering reliable
                 warehousing and transportation solutions for over 15 years.
             </p>
 
-            <nav class="site-footer__nav" aria-label="Footer navigation">
+            <nav class="site-footer__nav reveal" aria-label="Footer navigation">
                 <ul>
                     <li><a class="site-footer__link" href="#">About Us</a></li>
                     <li><a class="site-footer__link" href="#">Services</a></li>
@@ -576,10 +585,10 @@
         </div>
 
         <div class="site-footer__bottom">
-            <div class="site-footer__bottom-container container">
-                <p class="site-footer__copyright">&copy; 2026 GEKOM Logistics Pvt. Ltd. &middot;</p>
+            <div class="site-footer__bottom-container container" data-reveal-group>
+                <p class="site-footer__copyright reveal">&copy; 2026 GEKOM Logistics Pvt. Ltd. &middot;</p>
 
-                <ul class="site-footer__social" aria-label="Social media links">
+                <ul class="site-footer__social reveal" aria-label="Social media links">
                     <li>
                         <a href="#" aria-label="Facebook">
                             <span class="iconify" data-icon="ri:facebook-circle-line" aria-hidden="true"></span>
